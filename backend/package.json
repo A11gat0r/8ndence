@@ -1,0 +1,17 @@
+{
+  "name": "fake-app-detector-backend",
+  "version": "1.0.0",
+  "description": "Simple backend for the Fake App Detector frontend - serves static files and provides a scan API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "cors": "^2.8.5"
+  }
+}

@@ -1,0 +1,17 @@
+[
+  { "app_name": "PhonePe", "package": "com.phonepe.app", "publisher": "PhonePe Pvt Ltd" },
+  { "app_name": "Google Pay", "package": "com.google.android.apps.nbu.paisa.user", "publisher": "Google LLC" },
+  { "app_name": "Paytm", "package": "net.one97.paytm", "publisher": "Paytm Mobile Solutions" },
+  { "app_name": "WhatsApp Messenger", "package": "com.whatsapp", "publisher": "WhatsApp LLC" },
+  { "app_name": "Instagram", "package": "com.instagram.android", "publisher": "Instagram" },
+  { "app_name": "Facebook", "package": "com.facebook.katana", "publisher": "Facebook" },
+  { "app_name": "Signal Private Messenger", "package": "org.thoughtcrime.securesms", "publisher": "Signal Foundation" },
+  { "app_name": "Uber", "package": "com.ubercab", "publisher": "Uber Technologies" },
+  { "app_name": "Ola Cabs", "package": "com.olacabs.customer", "publisher": "Ola" },
+  { "app_name": "Amazon Shopping", "package": "in.amazon.mShop.android.shopping", "publisher": "Amazon" },
+  { "app_name": "Flipkart", "package": "com.flipkart.android", "publisher": "Flipkart" },
+  { "app_name": "PayPal", "package": "com.paypal.android.p2pmobile", "publisher": "PayPal" },
+  { "app_name": "Twitter", "package": "com.twitter.android", "publisher": "Twitter, Inc." },
+  { "app_name": "Snapchat", "package": "com.snapchat.android", "publisher": "Snap Inc" },
+  { "app_name": "LinkedIn", "package": "com.linkedin.android", "publisher": "LinkedIn" }
+]
