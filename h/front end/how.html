@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>How it works — Fake App Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">🔎</div>
+        <div>
+          <div class="site-title">Fake App Detector</div>
+          <div class="site-sub">Quick checks for suspicious apps</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="scan.html">Scan</a></li>
+          <li><a href="how.html">How it works</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel container">
+      <h1>How it works</h1>
+      <p>This tool performs simple metadata similarity checks to flag potentially suspicious apps. It compares three things:</p>
+      <ul>
+        <li><strong>App name similarity</strong> — compares the brand text to the application name.</li>
+        <li><strong>Package id similarity</strong> — compares a generated package id (e.g., <code>com.brand</code>) to the actual package identifier.</li>
+        <li><strong>Publisher similarity</strong> — compares the brand to the publisher name reported on the store.</li>
+      </ul>
+      <p>The tool averages the three similarity scores and converts that into a <em>risk</em> score using <code>risk = 100 - averageSimilarity</code>. Higher risk means lower similarity to the given brand and therefore more suspicious.</p>
+      <p class="note">This is a demo algorithm for educational purposes and should not be used as the only signal for critical decisions.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>Made with care · For demos only</div>
+      <div>&copy; <span id="year"></span></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Scan — Fake App Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">🔎</div>
+        <div>
+          <div class="site-title">Fake App Detector</div>
+          <div class="site-sub">Quick checks for suspicious apps</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="scan.html">Scan</a></li>
+          <li><a href="how.html">How it works</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Scan for suspicious apps</h1>
+        <p class="lead">Type a brand name and run a quick scan across known app metadata.</p>
+      </div>
+    </section>
+
+    <section id="scan" class="panel container">
+      <div class="controls">
+        <label for="brandInput" class="sr-only">Brand name</label>
+        <input type="text" id="brandInput" placeholder="Enter brand name (e.g., PhonePe)" />
+        <button id="scanBtn" class="btn-primary">Scan</button>
+      </div>
+      <div class="note">Tip: Try short brand names for best results.</div>
+    </section>
+
+    <section id="results" class="container panel results-panel">
+      <h2>Results</h2>
+      <div class="table-wrap">
+        <table id="resultsTable" aria-live="polite">
+          <thead>
+            <tr>
+              <th>App Name</th>
+              <th>Package ID</th>
+              <th>Publisher</th>
+              <th>Risk</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Modal for details -->
+    <div id="detailModal" class="modal" aria-hidden="true">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+        <h3 id="modalTitle">Result details</h3>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>Made with care · For demos only</div>
+      <div>&copy; <span id="year"></span></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
